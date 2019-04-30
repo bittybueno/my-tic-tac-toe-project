@@ -3,7 +3,7 @@
 This tic tac toe game is made to be played by screen readers. To select a square, hit [SPACE]. To move through the board, hit [TAB]. To reverse through the board, hit [SHIFT]+[TAB]. 
 
 #### Play the game here:
-- https://bittybueno.github.io/my-tic-tac-toe/
+- https://bittybueno.github.io/my-tic-tac-toe-project/
 
 #### How it works:
 The game is used in conjunction with screen readers by using labels+span & aria-describedby. 
