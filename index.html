@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accessible Tic Tac Toe</title>
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<form id="tic-tac-form">
+			<h2>Accessible Tic Tac Toe</h2>
+			<p>This game of Tic Tac Toe is made to be played with a screen reader. To travel through the board, press [ TAB ]. To reverse through the board, press [ SHIFT ] + [ TAB ]. To select a spot, press [ SPACE ]. The first player to get 3 marks in a row wins!</p>
+			<table>
+				<tbody>
+					<tr>
+						<td class="empty square">
+							<label for="row-one-col-one">Top row left column, <span>unplayed</span></label>
+							<input type="checkbox" name="row-one-col-one" aria-describedby="play-by-play"  />
+							 <span></span>
+						</td>
+						<td class="empty square">
+							<label for="row-one-col-two" >Top row middle column, <span>unplayed</span></label>
+							<input type="checkbox" name="row-one-col-two" aria-describedby="play-by-play" />
+							 <span></span>
+						</td>
+						<td class="empty square">
+							<label for="row-one-col-three" >Top row right column, <span>unplayed</span></label>
+							<input type="checkbox" name="row-one-col-three" aria-describedby="play-by-play" />
+							 <span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="empty square">
+							<label for="row-two-col-one" >Middle row left column, <span>unplayed</span></label>
+							<input type="checkbox" name="row-two-col-one" aria-describedby="play-by-play" />
+							 <span></span>
+						</td>
+						<td class="empty square">
+							<label for="row-two-col-two" >Middle row middle column, <span>unplayed</span></label>
+							<input type="checkbox" name="row-two-col-two" aria-describedby="play-by-play" />
+							 <span></span>
+						</td>
+						<td class="empty square">
+							<label for="row-two-col-three" >Middle row right column, <span>unplayed</span></label>
+							<input type="checkbox" name="row-two-col-three" aria-describedby="play-by-play" />
+							 <span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="empty square">
+							<label for="row-three-col-one" >Bottom row left column, <span>unplayed</span></label>
+							<input type="checkbox" name="row-three-col-one" aria-describedby="play-by-play" />
+							 <span></span>
+						</td>
+						<td class="empty square">
+							<label for="row-three-col-two" >Bottom row middle column, <span>unplayed</span></label>
+							<input type="checkbox" name="row-three-col-two" aria-describedby="play-by-play" />
+							 <span></span>
+						</td>
+						<td class="empty square">
+							<label for="row-three-col-three" >Bottom row right column, <span>unplayed</span></label>
+							<input type="checkbox" name="row-three-col-three" aria-describedby="play-by-play" />
+							 <span></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<footer id="notes">
+				<div class="messages" role="alert" aria-atomic="true"><p>Player 1 is up.</p></div>
+				<aside id="play-by-play" style="display:none">
+					<p>
+						<span>Player 1 is X. Player 2 is O. </span>
+						<span class="up-next">Player 1</span> is currently <span class="current-square">not on a square</span>.
+					</p>
+					<p>
+						Starting in the top left, the board is played:
+						<span class="board-reads">
+
+						</span>
+					</p>
+				</aside>
+				<button type="reset">Restart</button>
+			</footer>
+		</form>
+	</main>
+ 
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+	<script src="js/tic-tac-toe.js"></script>
+
+</body>
+</html>

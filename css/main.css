@@ -1,0 +1,72 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  padding-bottom:2em;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+#notes {
+  text-align: center;
+}
+
+
+label, .visually-hidden { 
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+ 
+table {
+  display:table;
+  border:1px solid #000;
+}
+
+table, .messages {
+  width:100%;
+  max-width:48rem;
+}
+
+
+
+table td[data-check="X"] input[type="checkbox"]:checked + span:after {
+  content:"X";
+}
+
+table td[data-check="O"] input[type="checkbox"]:checked + span:after {
+  content:"O";
+}
+
+tr {
+    display:table-row;
+    height:100%;
+}
+
+/*.wrapper {
+display: inline-block;
+}*/
+
+.square {
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	font-size: 36px;
+	vertical-align: middle;
+  display:table-cell;
+  width:33%;
+  height:100px;
+  border:1px solid #CCC;
+}
